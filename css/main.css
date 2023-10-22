@@ -1,0 +1,138 @@
+/* start glopal Rules  */
+*{
+    -webkit-box-sizing:border-box ;
+    -moz-box-sizing:border-box ;
+    box-sizing:border-box ;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: system-ui;
+}
+html{
+    scroll-behavior: smooth;
+}
+.contaneir{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* small screen  */
+@media(min-width: 768px){
+    .contaneir{
+        width: 750px;
+    }
+}
+/* small screen  */
+/* madium screen  */
+@media(min-width: 992px){
+    .contaneir{
+        width: 970px;
+    }
+}
+/* madium screen  */
+/* large screen  */
+@media(min-width: 1200px){
+    .contaneir{
+        width: 1170px;
+    }
+}
+/* large screen  */
+/* start glopal Rules  */
+
+/* start crups-page  */
+.crups-page .contaneir .heading{
+    text-align: center;
+    margin: 10px;
+    text-transform: uppercase;
+}
+.crups-page .contaneir input{
+    width: 100%;
+    padding: 5px;
+    margin:5px 0;
+    outline: none;
+    border: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.crups-page .contaneir input:focus{
+    box-shadow: 0 0 5px;
+}
+.crups-page .contaneir .prices input{
+    width: 20%;
+}
+.crups-page .contaneir .prices small{
+    background-color: rgb(2, 2, 142);
+    color: #fff;
+    padding: 4px;
+}
+.crups-page .contaneir .prices small::before{
+    content: "Total:";
+}
+.crups-page .contaneir .counter button{
+    width: 100%;
+    padding: 5px;
+    outline: none;
+    border: 1px solid #ddd;
+    background-color: rgb(2, 2, 142);
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.crups-page .contaneir .counter button:hover{
+    letter-spacing: 2px;
+    background-color: rgb(5, 5, 221)
+}
+.crups-page .contaneir .searching .btnSearch{
+    display: flex;
+    justify-content: space-between;
+}
+.crups-page .contaneir .searching .btnSearch button{
+    margin: 5px 0;
+    width: 35%;
+    padding: 5px;
+    border: none;
+    border: 1px solid #ccc;
+    background-color:rgb(2, 2, 142) ;
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.crups-page .contaneir .searching .btnSearch button:hover {
+    letter-spacing: 2px;
+    background-color: rgb(5, 5, 221)
+}
+#deleteDataAll{
+    width: 100%;
+    padding: 5px;
+    margin: 5px 0;
+    background-color: #02028e;
+    color: #fff;
+    outline: none;
+    border: none;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.crups-page .contaneir table{
+    width: 100%;
+}
+.crups-page .contaneir table td{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.crups-page .contaneir table tbody #update,
+.crups-page .contaneir table tbody #delete{
+    background-color: rgb(8, 8, 154);
+    color: #fff;
+    border: none;
+    padding: 5px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* start crups-page  */

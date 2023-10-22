@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crups System</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <!-- start crups page  -->
+    <div class="crups-page">
+        <div class="contaneir">
+        <div class="heading">
+            <h4>Crup</h4>
+            <p>CRUP MANAGEMENT SYSTEM</p>
+        </div>
+        <div class="inputs">
+            <input type="text"  id="title" placeholder="title">
+        <div class="prices">
+            <input type="number" onkeyup="getTotla()"  id="price" placeholder="Price">
+            <input type="number" onkeyup="getTotla()"  id="taxes" placeholder="Taxes">
+            <input type="number" onkeyup="getTotla()"  id="ads" placeholder="Ads">
+            <input type="number" onkeyup="getTotla()"  id="descount" placeholder="descount">
+            <small id="total"></small>
+        </div>
+        </div>
+        <div class="counter">
+            <input type="number" id="count" placeholder="Count">
+            <input type="text" id="category" placeholder="Category">
+            <button  id="create">Create</button>
+        </div>
+        <div class="searching">
+            <input type="search" id="search" onkeyup="setSeacrchMood(this.value) " placeholder="Search">
+            <div class="btnSearch">
+                <button id="secrchtitle" onclick="getSearchMood(this.id)">Search By Title</button>
+                <button id="secrchcaregory" onclick="getSearchMood(this.id)">Search By Category</button>
+            </div>
+        </div>
+        <div class="deleteAll">
+
+        </div>
+        <table>
+        <tr>
+                <td>Id</td>
+                <td>title</td>
+                <td>price</td>
+                <td>taxes</td>
+                <td>ads</td>
+                <td>descount</td>
+                <td>totla</td>
+                <td>category</td>
+                <td>update</td>
+                <td>delete</td>
+            </tr>
+
+            <tbody id="tbody">
+                
+            </tbody>
+        
+
+        </table>
+        </div>
+    </div>
+    <!-- start crups page  -->
+
+
+    <script src="Js/main.js"></script>
+</body>
+</html>
